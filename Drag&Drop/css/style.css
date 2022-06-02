@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  sans-serif;
+    
+}
+.container{
+    background-color: #928cff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.container .inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    gap: 5px;
+    width: 300px;
+    height: 120px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+.container .inputs .input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    width: 88%;
+}
+input:focus {
+    transform: scale(1.1);
+}
+.container .inputs .input input {
+    outline: none;
+    padding: 4px;
+    border: solid 1px #928cff;
+    border-radius: 4px;
+}
+.container .inputs .input #add {
+    background-color: #928cff;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    padding: 4px;
+    cursor: pointer;
+    outline: none;
+    font-size: 17px;
+    transition: 0.5s;
+}
+.container .inputs .input #add:hover {
+    letter-spacing: 2px;
+    background-color: #807afb;
+}
+
+h2 {
+    font-size: 32px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.list {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: flex-start;
+}
+.list .box {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 18px;
+    width: 200px;
+}
+.list .box .item {
+    background-color: #928cff;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    cursor: move;
+}
+
+.clear {
+    padding: 15px;
+    font-weight: bold;
+    background-color: #928cff;
+    border: 1px solid #fff;
+    width: 10%;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    margin-top: 10px;
+    display: none;
+}
+.container .clear:hover {
+    letter-spacing: 2px;
+    background-color: #807afb;
+    
+}
